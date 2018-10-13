@@ -1,0 +1,14 @@
+{
+  "name": "thedocweb-task",
+  "version": "1.0.0",
+  "description": "code task for thedocweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kunal Chauhan",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
