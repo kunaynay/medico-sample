@@ -1,0 +1,113 @@
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: #282c67;
+  color: #fafafe;
+  line-height: 1.5;
+  margin: 0; }
+
+.container {
+  text-align: center;
+  margin: 0 auto; }
+
+nav {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  padding: 0px;
+  width: 100%;
+  background-color: #fafafe;
+  color: #222; }
+  nav .logo {
+    margin: 0;
+    margin-left: 12.5%; }
+  nav img {
+    width: 150px; }
+  nav ul {
+    padding-top: 10px;
+    margin-top: 0;
+    margin-right: 12.5%;
+    float: right; }
+  nav li {
+    display: inline;
+    float: left; }
+  nav a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #222;
+    text-decoration: none; }
+  nav li:hover a {
+    color: #0041f5; }
+  nav a#openup {
+    display: none; }
+
+#home {
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  background: url("../img/background-main-blur.jpg") no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden; }
+  #home .container {
+    z-index: 1;
+    margin: 0 17.5%;
+    margin-top: 25vh;
+    text-shadow: 2px 2px 3px #000000; }
+
+@media screen and (max-width: 500px) {
+  nav {
+    height: auto;
+    border-bottom: 0; }
+    nav .logo {
+      display: none; }
+    nav ul {
+      display: none;
+      height: auto; }
+    nav li {
+      width: 100%;
+      float: left;
+      position: relative; }
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+      background-color: #fafafe;
+      border-bottom: 1px solid #282c67; }
+    nav a:hover {
+      color: #0041f5; }
+    nav a#openup:after {
+      content: "|||";
+      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-90deg);
+      /* Safari and Chrome */
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 20px; }
+    nav a#openup {
+      display: block;
+      background-color: #fafafe;
+      width: 100%; } }
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  zoom: 1; }
+
+/* For IE 6/7 (trigger hasLayout) */
