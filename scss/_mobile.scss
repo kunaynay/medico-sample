@@ -1,0 +1,138 @@
+//Media queries for mobile
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+    border-bottom: 0;
+
+    .logo {
+      display: none;
+    }
+
+    ul {
+      display: none;
+      height: auto;
+    }
+
+    li {
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+
+    a {
+      text-align: left;
+      width: 85vw;
+      text-indent: 25px;
+      background-color: $menu-bg;
+      border-bottom: 1px solid $menu-border;
+    }
+
+    a:hover {
+      color: $menu-hover;
+    }
+
+    //Hamburger Menu
+    a#openup:after {
+      content: "|||";
+      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+    }
+
+    //For responsive menu
+    a#openup {
+      display: block;
+      background-color: $menu-bg;
+      width: 100%;
+      // position: relative;
+    }
+  } //nav
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .section {
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  #home {
+    height: 70vh;
+    background: $main-bg;
+    .container {
+      margin-top: 20vh;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  #about {
+    p {
+      text-align: justify;
+      font-size: 0.9em;
+    }
+  }
+
+  #mobility {
+    .split-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #services {
+    .split-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  //For form responsiveness
+  form {
+    font-size: 0.7em;
+
+    .col-25,
+    .col-75,
+    input[type="submit"],
+    input[type="email"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+} // media
+
+//For landscape mode
+@media screen and (max-height: 560px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .proceed {
+    font-size: 0.8em;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+} /* For IE 6/7 (trigger hasLayout) */

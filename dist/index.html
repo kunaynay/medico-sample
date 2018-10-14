@@ -26,13 +26,13 @@
           <a href='#about'>About</a>
         </li>
         <li>
-          <a href='#service'>Item 1</a>
+          <a href='#services'>Services</a>
         </li>
         <li>
-          <a href='#'>Item 2</a>
+          <a href='#mobility'>Find</a>
         </li>
         <li>
-          <a href='#'>Item 3</a>
+          <a href='#contact-us'>Contact Us</a>
         </li>
       </ul>
       <a href='#' id='openup'><img src="./img/SVG/medico.svg"></a>
@@ -44,19 +44,158 @@
     <div id="home">
       <div class="container">
         <h1>medico</h1>
-        <h2>Healthcare, in your hands</h2>
-        <p class="hero-desc">Medico is your online platform for all your medical needs. Everything from booking
+        <h2>Healthcare, in your hands, everywhere.</h2>
+        <p class="desc hide-mobile">Medico is your online platform for all your medical needs. Everything from
+          booking
           appointments, scheduling visits, to even getting you in touch with pharmacies. All of it available in one
           place.</p>
+        <button id='login'>Log in / Sign up</button>
       </div>
     </div>
   </main>
 
   <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class='section-head'>
+        All of your medical needs can be accessed anywhere!
+      </h2>
+      <p class='desc'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan velit et metus aliquam, quis gravida
+        tellus iaculis. Vivamus velit ex, semper vel massa in, fringilla bibendum sapien. Morbi imperdiet venenatis
+        sem, eu ornare enim efficitur quis. Vestibulum fermentum condimentum velit. Nunc mollis porttitor porta.
+        Quisque accumsan lectus eu lacus dapibus congue. Nullam sit amet mauris quam. Vestibulum sit amet augue diam.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </div>
+  </section>
 
   <!-- Service -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-head">
+        Our Services
+      </h2>
+      <div class="split-3">
+        <div class="service">
+          <div class="service-header">On-Call Doctor</div>
+          <i class="fas fa-user-md"></i>
+          <br>
+          <p>Get access to professional medical advice when you need from our dertified doctors.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-header">On-Call Doctor</div>
+          <i class="fas fa-user-md"></i>
+          <br>
+          <p>Get access to professional medical advice when you need from our dertified doctors.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-header">On-Call Doctor</div>
+          <i class="fas fa-user-md"></i>
+          <br>
+          <p>Get access to professional medical advice when you need from our dertified doctors.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobility -->
+  <section class="section" id="mobility">
+    <div class="container">
+      <div class="split-2">
+        <div><img src="./img/SVG/doctor-and-you.svg" alt="Doctors just for you"></div>
+        <div>
+          <h2 class='section-head'>
+            Find a doctor for you anywhere
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae error itaque, cupiditate odit molestiae
+            voluptate veritatis quo laboriosam et.
+          </p>
+          <a href="" class="proceed"><i class="fas fa-location-arrow"></i> Find your Doctor Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="section" id="contact-us">
+    <div class="container">
+      <h2>
+        Got Any Questions?
+      </h2>
+      <p>Send us a mail, or call us. We would love to hear from you.</p>
+      <form>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">E-mail</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea id="message" name="message" placeholder="What's on your mind?" style="height:200px" required></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" class="submit-form" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
+  <footer>
+    <div class="container hide-mobile">
+      <div class="footer-cl">
+        <ul>
+          <li>ABCD</li>
+          <li>ABCD</li>
+          <li>ABCD</li>
+        </ul>
+        <ul>
+          <li>ABCD</li>
+          <li>ABCD</li>
+          <li>ABCD</li>
+        </ul>
+        <ul>
+          <li>ABCD</li>
+          <li>ABCD</li>
+          <li>ABCD</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#">
+        <img src="./img/SVG/medico-light.svg">
+      </a>
+      <br>Copyright &copy; 2018, medico</div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
